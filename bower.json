@@ -1,0 +1,13 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "1.11",
+    "normalize-css": "normalize.css#~3.0.3"
+  }
+}

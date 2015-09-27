@@ -1,0 +1,33 @@
+block nav
+-var menu = { 'Главная': '/'; 'Мои работы': '/'; 'Связаться со мной': '/'};
+nav.menu
+  ul.menu-list
+    each val, key in menu
+      if selected === key
+        li.menu-list__item.menu-list__item_active
+          span.menu-list__item-link= key
+      else
+        li.menu-list__item
+          a.menu-list__item-link(href = val)= key
+
+  //-mixin navigation(items)
+      nav.menu
+        ul.menu-list
+          each item, i in items
+            if i === pageId
+              li.menu-list__item.menu-list__item_active
+                span.menu-list__item-link= item.name
+            else
+              li.menu-list__item
+                a.menu-list__item-link(href = item.href)= item.name
+
+      +navigation([{
+        name: 'Главная',
+        href: '/'
+      }, {
+        name: 'Мои работы',
+        href: '/'
+      }, {
+        name: 'Связаться со мной',
+        href: '/'
+        }])

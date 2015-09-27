@@ -1,0 +1,138 @@
+html {
+  height: 100%; }
+
+body {
+  background: url(../img/comppattern2.png) repeat;
+  font-family: 'fira_sansbook';
+  color: #959aa8;
+  height: 100%;
+  min-width: 1200px;
+  position: relative;
+  margin: 0; }
+
+.page-header {
+  background: #eff3f7 url(/img/gradient-line.jpg) bottom center no-repeat;
+  height: 119px;
+  position: relative;
+  margin-bottom: 39px; }
+
+.header-container {
+  max-width: 1200px;
+  min-width: 960px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative; }
+
+.header-logo-link {
+  position: absolute;
+  top: 39px;
+  cursor: url(/img/cursor.png), pointer; }
+
+.header-logo-text {
+  position: absolute;
+  text-indent: -9999px; }
+
+.socials-list {
+  position: absolute;
+  right: 0;
+  top: 36px;
+  min-width: 260px;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.socials-list__item {
+  display: inline-block;
+  margin-left: 19px;
+  height: 47px;
+  width: 47px; }
+
+.socials-list__item:first-child {
+  margin-left: 0; }
+
+.socials-link {
+  display: block;
+  text-indent: -9999px;
+  height: 100%;
+  width: 100%;
+  background: url(/img/socials.png) no-repeat;
+  cursor: url(/img/cursor.png), pointer; }
+
+.socials-link.vk {
+  background-position: -10px -10px; }
+
+.socials-link.vk:hover {
+  background-position: -77px -10px; }
+
+.socials-link.tw {
+  background-position: -144px -10px; }
+
+.socials-link.tw:hover {
+  background-position: -211px -10px; }
+
+.socials-link.fb {
+  background-position: -278px -10px; }
+
+.socials-link.fb:hover {
+  background-position: -345px -10px; }
+
+.socials-link.git {
+  background-position: -412px -10px; }
+
+.socials-link.git:hover {
+  background-position: -479px -10px; }
+
+.page-wrapper {
+  position: relative;
+  min-height: 100%;
+  height: auto !important;
+  overflow: hidden; }
+
+.page-wrapper:after {
+  content: "";
+  height: 80px;
+  display: block; }
+
+.page-footer {
+  position: absolute;
+  height: 80px;
+  margin-top: -80px;
+  background: #eff3f7 url(/img/gradient-line.jpg) top center no-repeat;
+  width: 100%; }
+
+.footer-wrapper {
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+  height: 100%;
+  text-align: center; }
+
+.login {
+  display: inline-block;
+  height: 35px;
+  width: 20px;
+  background: url(/img/lock-closed.png) left no-repeat;
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  text-indent: -9999px;
+  cursor: url(/img/cursor.png), pointer; }
+
+.login:hover {
+  background: url(/img/lock-opened.png) left no-repeat;
+  cursor: url(/img/cursor.png), pointer; }
+
+.copyright {
+  font-family: 'fira_sanslight';
+  font-size: 13px;
+  color: #4a545d;
+  display: inline-block;
+  margin: auto;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  vertical-align: middle;
+  padding-top: 35px; }

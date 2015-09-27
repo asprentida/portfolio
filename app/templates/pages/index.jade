@@ -1,0 +1,68 @@
+-var selected = 'Главная'
+
+extends ../layouts/layout-main.jade
+
+block title
+  | Главная
+
+block menu
+  nav.menu
+    ul.menu-list
+      li.menu-list__item.menu-list__item_active
+        a.menu-list__item-link(href="/") Обо мне
+      li.menu-list__item
+        a.menu-list__item-link(href="/") Мои работы
+      li.menu-list__item
+        a.menu-list__item-link(href="/") Связаться со мной
+// Основное содержание
+block content
+  // Опыт работы
+  section.personal.profile
+    div.personal-header.profile-header Основная информация
+    div.personal-body.profile-body.clearfix
+      div.personal-photo-wrapper
+        img(src="img/photo.jpg" alt="photo" class="photo")
+      div.personal-characteristics
+        ul.personal-list
+          li.personal-item
+            div.personal-item__property Меня зовут
+            div.personal-item__value Ксения Кучерова
+          li.personal-item
+            div.personal-item__property Мой возраст
+            div.personal-item__value 28 лет
+          li.personal-item
+            div.personal-item__property Мой город
+            div.personal-item__value Москва
+          li.personal-item
+            div.personal-item__property Моя специализация
+            div.personal-item__value Frontend-разработчик
+          li.personal-item
+            div.personal-item__property Ключевые навыки
+            div.personal-item__value
+              ul.skills-list
+                li.skills-item html
+                li.skills-item css
+                li.skills-item javascript
+                li.skills-item gulp
+                li.skills-item git
+  section.experience.profile
+    div.experience-header.profile-header Опыт работы
+    div.experience-body.profile-body
+      ul.experience-list.profile-list
+        li.experience-item.icon-work
+          div.experience-item__place.place ООО "ИТГ Консалтинг"
+          div.experience-item__period.period Октябрь 2013 - июль 2014
+        li.experience-item.icon-work
+          div.experience-item__place.place Департамент информационных технологий города Москвы
+          div.experience-item__period.period Апрель 2015 - по настоящее время
+  // Образование
+  section.education.profile
+    div.education__header.profile-header Образование
+    div.education__body.profile-body
+      ul.education-list.profile-list
+        li.education-item.icon-edu
+          div.education__place.place Высшее РГГУ
+          div.education__period.period 2007-2011
+        li.education-item.icon-course
+          div.education-item__place.place Курсы Loftschool
+          div.education-item__period.period 2015

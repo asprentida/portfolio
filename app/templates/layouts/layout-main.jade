@@ -1,0 +1,32 @@
+doctype
+html(lang='ru-RU')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    title
+      block title
+    link(rel='stylesheet' href='bower_components/normalize-css/normalize.css')
+    link(rel='stylesheet' href='fonts/fira/fira.css')
+    link(rel='stylesheet' href='fonts/ProximaNova/proximanovacond-semibold.css')
+    link(rel='stylesheet' href='css/general.css')
+    link(rel='stylesheet' href='css/index.css')
+    link(rel="shortcut icon", type="image/x-icon", href="/img/favicon.ico")
+    script(src="js/modernizr.js")
+  body
+    .page-wrapper
+      include ../includes/pageheader.jade
+      div.main-container.clearfix
+        aside.fixed-content
+          // Меню
+          block menu
+          // Контакты
+          include ../includes/contacts.jade
+        //- Основное содержание  
+        main.variable-content
+          block content
+    // Футер
+    include ../includes/pagefooter.jade
+
+
+
+
