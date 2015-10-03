@@ -124,7 +124,8 @@
   list-style: none; }
 
 .personal-characteristics {
-  float: right; }
+  float: right;
+  max-width: 369px; }
 
 .personal-item {
   padding-top: 5px; }
@@ -134,18 +135,11 @@
   font-family: 'fira_sansmedium';
   font-size: 17px;
   vertical-align: top;
-  color: #4a545d; }
-
-.personal-item__property {
-  display: inline-block;
-  font-family: 'fira_sansmedium';
-  font-size: 17px;
-  vertical-align: top;
-  color: #4a545d; }
+  color: #4a545d;
+  margin-right: 15px; }
 
 .personal-item__value {
   display: inline-block;
-  margin-left: 15px;
   font-family: 'fira_sansbook';
   font-size: 15px;
   color: #37424d; }
@@ -163,7 +157,7 @@
   margin-bottom: 3px;
   font-family: 'proximanovacond-semibold', sans-serif;
   font-size: 13px;
-  color: #FFFFFF;
+  color: #ffffff;
   border-radius: 3px;
   /* FF3.6+ */
   /* Chrome,Safari4+ */
