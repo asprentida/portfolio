@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Мои работы</title>
+        <title>Связаться со мной</title>
         <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
         <link rel="stylesheet" href="fonts/fira/fira.css">
         <link rel="stylesheet" href="fonts/ProximaNova/proximanovacond-semibold.css">
@@ -37,8 +37,8 @@
                     <nav class="menu">
                         <ul class="menu-list">
                             <li class="menu-list__item"><a href="index.html" class="menu-list__item-link">Обо мне</a></li>
-                            <li class="menu-list__item menu-list__item_active"><a href="myportfolio.html" class="menu-list__item-link">Мои работы</a></li>
-                            <li class="menu-list__item"><a href="contact.html" class="menu-list__item-link">Связаться со мной</a></li>
+                            <li class="menu-list__item"><a href="myportfolio.html" class="menu-list__item-link">Мои работы</a></li>
+                            <li class="menu-list__item"><a href="contact.html" class="menu-list__item-link menu-list__item_active">Связаться со мной</a></li>
                         </ul>
                     </nav>
                     <!-- Контакты-->
@@ -52,40 +52,30 @@
                     </div>
                 </aside>
                 <main class="variable-content">
-                    <section class="profile">
-                        <div class="profile-header">Мои работы</div>
-                        <div class="profile-body clearfix">
-                            <div class="site-item">
-                                <a href="/" target="_blank" class="site-picture">
-                                    <div class="site-img-wrapper"><img src="img/site1.png" alt="Сайт 1"></div>
-                                </a><a href="/" target="_blank" class="site-name">www.site.ru</a>
-                                <div class="site-descr">Информация о проекте </div>
-                            </div>
-                            <div class="site-item">
-                                <a href="/" target="_blank" class="site-picture">
-                                    <div class="site-img-wrapper"><img src="img/site2.png" alt="Сайт 2"></div>
-                                </a><a href="/" target="_blank" class="site-name">www.site.ru</a>
-                                <div class="site-descr">Инфо о проекте Инфо о проекте Инфо о проекте Инфо о проекте</div>
-                            </div>
-                            <div class="site-item">
-                                <a href="/" target="_blank" class="site-picture">
-                                    <div class="site-img-wrapper"><img src="img/site3.png" alt="Сайт 3"></div>
-                                </a>
-                                <div class="site-name">www.site.ru</div>
-                                <div class="site-descr">Инфо о проекте </div>
-                            </div>
-                            <div class="site-item">
-                                <a href="/" target="_blank" class="site-picture">
-                                    <div class="site-img-wrapper"><img src="img/site4.png" alt="Сайт 4"></div>
-                                </a>
-                                <div class="site-name">www.site.ru</div>
-                                <div class="site-descr">Инфо о проекте </div>
-                            </div>
-                            <div class="site-item">
-                                <div class="addproject-wrapper">
-                                    <div class="addproject">Добавить проект</div>
+                    <section class="feedback">
+                        <div class="feedback-header">У вас интересный проект? Напишите мне</div>
+                        <div class="feedback-wrapper clearfix">
+                            <form id="contact-form" action="/">
+                                <div class="feedback-item username">
+                                    <label for="feedback-name" class="fieldname">Имя</label>
+                                    <input type="text" id="feedback-name" placeholder="Как к вам обращаться" class="fieldcontent">
                                 </div>
-                            </div>
+                                <div class="feedback-item usermail">
+                                    <label for="feedback-email" class="fieldname">E-mail</label>
+                                    <input type="text" id="feedback-email" placeholder="Куда мне писать" class="fieldcontent">
+                                </div>
+                                <div class="feedback-item usermessage">
+                                    <label for="feedback-message" class="fieldname">Сообщение</label>
+                                    <textarea type="text" id="feedback-message" placeholder="Кратко в чем суть" rows="8" class="fieldcontent"></textarea>
+                                </div>
+                                <div class="feedback-item captcha clearfix">
+                                    <label for="feedback-captcha" class="fieldname">Введите код, указанный на картинке</label>
+                                    <div class="captcha-img-wrapper"></div>
+                                    <input type="text" id="feedback-message" placeholder="Введите код" class="fieldcontent code">
+                                </div>
+                                <button type="submit" class="feedback-submit btn">Отправить</button>
+                                <button type="reset" class="feedback-reset btn">Очистить</button>
+                            </form>
                         </div>
                     </section>
                 </main>

@@ -42,10 +42,6 @@
   top: 75px;
   left: 20%; }
 
-.menu-list__item {
-  margin: 0 10px;
-  border-bottom: none; }
-
 .menu-list__item_active {
   margin: 0;
   border: none;

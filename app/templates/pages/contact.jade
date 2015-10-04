@@ -1,0 +1,35 @@
+extends ../layouts/layout-main.jade
+
+block title
+  | Связаться со мной
+
+block menu
+  nav.menu
+    ul.menu-list
+      li.menu-list__item
+        a.menu-list__item-link(href="index.html") Обо мне
+      li.menu-list__item
+        a.menu-list__item-link(href="myportfolio.html") Мои работы
+      li.menu-list__item
+        a.menu-list__item-link.menu-list__item_active(href="contact.html") Связаться со мной
+// Основное содержание
+block content
+  section.feedback
+    div.feedback-header У вас интересный проект? Напишите мне
+    div.feedback-wrapper.clearfix
+      form(id="contact-form", action="/")
+        div.feedback-item.username
+          label(for="feedback-name").fieldname Имя
+          input(type="text" id="feedback-name" placeholder="Как к вам обращаться").fieldcontent
+        div.feedback-item.usermail
+          label(for="feedback-email").fieldname E-mail
+          input(type="text" id="feedback-email" placeholder="Куда мне писать").fieldcontent
+        div.feedback-item.usermessage
+          label(for="feedback-message").fieldname Сообщение
+          textarea(type="text" id="feedback-message" placeholder="Кратко в чем суть" rows="8").fieldcontent
+        div.feedback-item.captcha.clearfix
+          label(for="feedback-captcha").fieldname Введите код, указанный на картинке
+          div.captcha-img-wrapper
+          input(type="text" id="feedback-message" placeholder="Введите код").fieldcontent.code
+        button.feedback-submit.btn(type="submit") Отправить
+        button.feedback-reset.btn(type="reset") Очистить
