@@ -1,0 +1,83 @@
+.loginform-section {
+  width: 590px;
+  border-radius: 5px;
+  overflow: hidden;
+  background: #eff3f7;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 485px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
+
+.login-header {
+  width: 100%;
+  height: 92px;
+  background: #48cbe8;
+  border-bottom: 14px solid #67dffa;
+  font-family: 'fira_sansbook';
+  font-size: 40px;
+  color: #ffffff;
+  line-height: 92px;
+  text-align: center;
+  margin-bottom: 17px; }
+
+.loginform-wrapper {
+  width: 425px;
+  margin: 0 auto;
+  padding-bottom: 22px; }
+
+.loginform-item {
+  width: 100%;
+  margin-bottom: 15px; }
+
+.loginname {
+  display: block;
+  width: 100%;
+  font-family: 'fira_sanslight';
+  font-size: 36px;
+  text-align: center; }
+
+.logincontent::-webkit-input-placeholder {
+  color: #48cbe8; }
+
+.logincontent::-moz-placeholder {
+  color: #48cbe8; }
+
+.logincontent:-moz-placeholder {
+  color: #48cbe8; }
+
+.logincontent:-ms-input-placeholder {
+  color: #48cbe8; }
+
+.logincontent {
+  width: 388px;
+  border-radius: 5px;
+  border: 1px solid #48cbe8;
+  font-family: 'fira_sanslight';
+  font-size: 17px;
+  color: #48cbe8;
+  padding: 16px 18px;
+  position: relative; }
+
+.btn {
+  color: #ffffff;
+  font-family: 'fira_sansbook';
+  font-size: 36px;
+  padding: 2px 50px;
+  background: #48cbe8;
+  box-shadow: 0 3px 0 #3ba8c0;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: block;
+  vertical-align: middle;
+  cursor: url(/img/cursor.png), pointer; }
+  .btn:focus {
+    top: 3px;
+    box-shadow: none;
+    outline: none; }

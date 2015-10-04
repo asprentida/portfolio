@@ -1,0 +1,21 @@
+doctype
+html(lang='ru-RU')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    title
+      block title
+    link(rel='stylesheet' href='bower_components/normalize-css/normalize.css')
+    link(rel='stylesheet' href='fonts/fira/fira.css')
+    link(rel='stylesheet' href='fonts/ProximaNova/proximanovacond-semibold.css')
+    link(rel='stylesheet' href='css/general.css')
+    link(rel='stylesheet' href='css/index.css')
+    link(rel='stylesheet' href='css/myportfolio.css')
+    link(rel='stylesheet' href='css/contact.css')
+    link(rel='stylesheet' href='css/login.css')
+    link(rel="shortcut icon", type="image/x-icon", href="/img/favicon.ico")
+    script(src="js/modernizr.js")
+  body
+    .page-wrapper
+        block loginform
+    include ../includes/pagefooter.jade

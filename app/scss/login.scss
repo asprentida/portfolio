@@ -1,0 +1,75 @@
+@import "_variables";
+.loginform-section {
+	width: 590px;
+	border-radius: 5px;
+	overflow: hidden;
+	background: $grayl;
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	height: 485px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.login-header{
+	width: 100%;
+	height: 92px;
+	background: $blue3;
+	border-bottom: 14px solid #67dffa;
+	font-family: 'fira_sansbook';
+	font-size: 40px;
+	color: $white;
+	line-height: 92px;
+	text-align: center;
+	margin-bottom: 17px;
+}
+.loginform-wrapper{
+	width: 425px;
+	margin: 0 auto;
+	padding-bottom: 22px;
+}
+.loginform-item{
+	width: 100%;
+	margin-bottom: 15px;
+}
+.loginname{
+	display: block;
+	width: 100%;
+	font-family: 'fira_sanslight';
+	font-size: 36px;
+	text-align: center;
+}
+.logincontent::-webkit-input-placeholder{color:$blue3;}
+.logincontent::-moz-placeholder         {color:$blue3;}
+.logincontent:-moz-placeholder          {color:$blue3;}
+.logincontent:-ms-input-placeholder     {color:$blue3;}
+.logincontent{
+	width: 388px;
+	border-radius: 5px;
+	border: 1px solid $blue3;
+	font-family: 'fira_sanslight';
+	font-size: 17px;
+	color: #48cbe8;
+	padding: 16px 18px;
+	position: relative;
+}
+.btn{
+	color: $white;
+	font-family: 'fira_sansbook';
+	font-size: 36px;
+	padding: 2px 50px;
+	background: $blue3;
+	box-shadow: 0 3px 0 $blue1;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	margin: 0 auto;
+	margin-top: 30px;
+	display: block;
+	vertical-align: middle;
+	cursor: $hand;
+	&:focus{
+		top: 3px;
+		box-shadow:none;
+		outline: none;
+	}
+}

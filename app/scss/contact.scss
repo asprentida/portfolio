@@ -60,8 +60,7 @@
 .usermessage .fieldcontent{
 	width: 100%;
 	max-width: 100%;
-// 	min-width: 100%;
-// }
+}
 .captcha-img-wrapper{
 	width: 190px;
 	height: 76px;
@@ -86,6 +85,7 @@
 	padding: 2px 20px;
 	position: relative;
 	outline: none;
+	cursor: $hand;
 }
 .feedback-submit{
 	@extend .btn;

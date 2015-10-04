@@ -1,0 +1,17 @@
+extends ../layouts/layout-login.jade
+
+block title
+  | Авторизация
+
+block loginform
+  section.loginform-section
+    div.login-header Авторизируйтесь
+    form(action="/").loginform
+      div.loginform-wrapper
+        div.loginform-item
+          label(for="login").loginname Логин
+          input(type="text", placeholder="Введите логин" id="login").logincontent
+        div.loginform-item
+          label(for="pass").loginname Пароль
+          input(type="text", placeholder="Введите пароль" id="pass").logincontent
+        button(type="submit").login-submit.btn Войти

@@ -65,8 +65,8 @@
   overflow: hidden; }
 
 .usermessage .fieldcontent {
-  max-width: 100%;
-  min-width: 100%; }
+  width: 100%;
+  max-width: 100%; }
 
 .captcha-img-wrapper {
   width: 190px;
@@ -91,7 +91,8 @@
   border: none;
   padding: 2px 20px;
   position: relative;
-  outline: none; }
+  outline: none;
+  cursor: url(/img/cursor.png), pointer; }
 
 .feedback-submit {
   background-color: #48cbe8;
