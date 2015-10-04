@@ -11,15 +11,15 @@ block menu
       li.menu-list__item.menu-list__item_active
         a.menu-list__item-link(href="/") Обо мне
       li.menu-list__item
-        a.menu-list__item-link(href="/") Мои работы
+        a.menu-list__item-link(href="myportfolio.html") Мои работы
       li.menu-list__item
         a.menu-list__item-link(href="/") Связаться со мной
 // Основное содержание
 block content
   // Опыт работы
-  section.personal.profile
-    div.personal-header.profile-header Основная информация
-    div.personal-body.profile-body.clearfix
+  section.profile
+    div.profile-header Основная информация
+    div.profile-body.clearfix
       div.personal-photo-wrapper
         img(src="img/photo.jpg" alt="photo" class="photo")
       div.personal-characteristics
@@ -45,9 +45,9 @@ block content
                 li.skills-item javascript
                 li.skills-item gulp
                 li.skills-item git
-  section.experience.profile
-    div.experience-header.profile-header Опыт работы
-    div.experience-body.profile-body
+  section.profile
+    div.profile-header Опыт работы
+    div.profile-body
       ul.experience-list.profile-list
         li.experience-item.icon-work
           div.experience-item__place.place ООО "ИТГ Консалтинг"
@@ -56,9 +56,9 @@ block content
           div.experience-item__place.place Департамент информационных технологий города Москвы
           div.experience-item__period.period Апрель 2015 - по настоящее время
   // Образование
-  section.education.profile
-    div.education__header.profile-header Образование
-    div.education__body.profile-body
+  section.profile
+    div.profile-header Образование
+    div.profile-body
       ul.education-list.profile-list
         li.education-item.icon-edu
           div.education__place.place Высшее РГГУ

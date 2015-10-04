@@ -119,6 +119,27 @@ body {
     vertical-align: middle;
     padding-top: 35px;
 }
+.variable-content{
+    width: 650px;
+    float: right;
+}
+.profile-header{
+    display: inline-block;
+    font-size: 27px;
+    color: $blue1;
+    padding: 14px 20px 10px 20px;
+    border-bottom: 2px solid $blue1;
+}
+.profile-body{
+    // padding: 20px 50px 40px 50px;
+    padding: 20px 0px 40px 20px;
+}
+.profile{
+    clear: right;
+    background-color: $grayl;
+    margin-bottom: 31px;
+    border-radius: 3px;
+}
 // .clearfix:after{
 //     visibility: hidden;
 //     content: " ";

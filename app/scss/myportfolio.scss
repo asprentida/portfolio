@@ -1,0 +1,64 @@
+@import "_variables";
+// .site-picture{
+// 	box-sizing: border-box;
+// 	width: 182px;
+// 	height: 131px;
+// 	border-radius: 5px;
+// 	border: 2px solid $blue1;
+// 	overflow: hidden;
+// }
+.site-img-wrapper{
+	box-sizing: border-box;
+	width: 182px;
+	height: 129px;
+	border-radius: 5px;
+	border: 2px solid $blue1;
+	overflow: hidden;
+}
+.site-item{
+	float: left;
+	width: 182px;
+	margin-right: 30px;
+	margin-bottom: 40px;
+}
+.site-item:nth-child(3n+0){
+	margin-right: 0px;
+}
+.site-name{
+	font-family: 'fira_sanslight_italic';
+	font-size: 13px;
+	color: $blue1;
+	display: block;
+	text-align: center;
+}
+.site-descr{
+	text-align: center;
+	font-family: 'fira_sanslight';
+	font-size: 15px;
+	color: #4a545d;
+}
+.addproject-wrapper{
+	background: $white url(/img/addproject.png) 50% 35px no-repeat;
+	border: 2px dashed $blue1;
+	@extend .site-img-wrapper;
+	position: relative;
+}
+.addproject{
+	width: 100%;
+	color: $blue1;
+	font-family: 'fira_sanslight';
+	font-size: 13px;
+	position: absolute;
+	top: 75px;
+	left: 20%;
+}
+.menu-list__item{
+  margin: 0 10px;
+  border-bottom: none;
+}
+.menu-list__item_active {
+  margin: 0;
+  border: none;
+  background: $blue1;
+  padding-left: 10px;
+}
